@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const cookieParser = require('cookie-parser');
 const connectDB = require('./config/db');
 const projectRouter = require('./routes/projects');
+const employeeRouter = require('./routes/employee');
 
 const corsOptions ={
     origin:'*', 
@@ -23,6 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use('/projects', projectRouter);
+app.use('/employees', employeeRouter);
 
 connectDB();
 

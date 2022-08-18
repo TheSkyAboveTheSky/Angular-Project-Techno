@@ -31,7 +31,7 @@ const updateEmployee = async(req,res) =>{
 const deleteEmployee = async(req,res) => {
   try{
     await Employee.findByIdAndDelete(req.params.id);
-    res.status(200);json({message : "Employee deleted successfully !"});
+    res.status(200).json({message : "Employee deleted successfully !"});
   } catch(err){
     res.status(500).json({error: err});
   }
@@ -51,5 +51,5 @@ module.exports = {
   getEmployeeById,
   updateEmployee,
   createEmployee,
-  deleteEmployee
+  deleteEmployee,
 }
