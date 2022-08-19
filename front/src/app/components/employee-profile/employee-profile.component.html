@@ -1,4 +1,4 @@
-<div>
+<div class="sidebar-con">
     <div class="body d-flex py-lg-3 py-md-2">
       <div class="container-xxl">
           <!-- Employeee Profile Header-->
@@ -21,14 +21,14 @@
                                 <img src="../../../assets/images/avatar1.jpg" alt="" class="avatar xl rounded-circle img-thumbnail shadow-sm">
                             </a>
                             <div class="about-info d-flex align-items-center mt-3 justify-content-center flex-column">
-                                <h6 class="mb-0 fw-bold d-block fs-6">Web Developer</h6>
+                                <h6 class="mb-0 fw-bold d-block fs-6">{{employee.job | uppercase}}</h6>
                                 <span class="text-muted small">Employee Id : {{employee._id}}</span>
                             </div>
                         </div>
                         <div class="teacher-info border-start ps-xl-4 ps-md-3 ps-sm-4 ps-4 w-100">
-                            <h6  class="mb-0 mt-2  fw-bold d-block fs-6">{{employee.fullName}}</h6>
-                            <span class="py-1 fw-bold small-11 mb-0 mt-1 text-muted">{{employee.job}}</span>
-                            <p class="mt-2 small">{{employee.description}}</p>
+                            <h6  class="mb-0 mt-2  fw-bold d-block fs-6">{{employee.fullName | uppercase}}</h6>
+                            <span class="py-1 fw-bold small-11 mb-0 mt-1 text-muted">{{employee.job | uppercase}}</span>
+                            <p class="mt-2 small text-justify">{{employee.description}}</p>
                             <div class="row g-2 pt-2">
                                 <div class="col-xl-5">
                                     <div class="d-flex align-items-center">

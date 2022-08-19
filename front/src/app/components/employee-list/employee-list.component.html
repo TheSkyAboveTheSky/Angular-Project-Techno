@@ -1,4 +1,4 @@
-<div class="body d-flex py-lg-3 py-md-2">
+<div class="body d-flex py-lg-3 py-md-2 sidebar-con">
   <div class="container-xxl">
       <div class="row clearfix">
           <div class="col-md-12">
@@ -35,7 +35,7 @@
                           <h6  class="mb-0 mt-2  fw-bold d-block fs-6">{{employee.fullName | uppercase}}</h6>
                           <span class="light-info-bg py-1 px-2 rounded-1 d-inline-block fw-bold small-11 mb-0 mt-1">{{employee.job | uppercase}}</span>
                           <div class="video-setting-icon mt-3 pt-3 border-top">
-                              <p>{{employee.description}}</p>
+                              <p class="text-justify">{{employee.description}}</p>
                           </div>
                           <a routerLink="" mat-raised-button color="primary" style="margin-right: 0.5rem;"><i class="fa-solid fa-plus me-2 fs-6"></i>Add Task</a>
                           <a href="employees/{{employee._id}}" mat-raised-button color="primary"><i class="fa-solid fa-user me-2 fs-6"></i>Profile</a>

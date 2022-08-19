@@ -11,6 +11,7 @@ import { EmployeeProfileComponent } from "./components/employee-profile/employee
 import { EditPersonalInformationsComponent } from "./components/edit-personal-informations/edit-personal-informations.component";
 import { EditBankInformationsComponent } from "./components/edit-bank-informations/edit-bank-informations.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
+import { NavbarComponent } from "./components/navbar/navbar.component";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SidebarComponent } from "./components/sidebar/sidebar.component";
     HttpClientModule,
     EmployeeProfileComponent,
     SidebarComponent,
+    NavbarComponent,
     EmployeeListComponent
   ],
   providers: [],
