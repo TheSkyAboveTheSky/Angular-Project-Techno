@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material-module';
 import { EmployeeProfileComponent } from './components/employee-profile/employee-profile.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
