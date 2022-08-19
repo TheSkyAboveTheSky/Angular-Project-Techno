@@ -1,0 +1,89 @@
+<mat-toolbar>
+  <h2>Edit Personal Informations</h2>
+  <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1">
+    <mat-icon>clear</mat-icon>
+  </button>
+</mat-toolbar>
+<form [formGroup]="myform" class="normal-form" (submit)="onUpdate()">
+  <mat-grid-list cols="2" rowHeight="400px">
+    <mat-grid-tile>
+      <div class="controles-container">
+
+
+
+        <mat-form-field>
+          <input formControlName="fullName" matInput placeholder="Full Name" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="email" matInput placeholder="Email" />
+          <mat-error *ngIf="myform.controls['email'].errors?.['required']">This field is required</mat-error>
+          <mat-error *ngIf="myform.controls['email'].errors?.['email']">Invalid email form</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="phone" matInput placeholder="Phone Number" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="job" matInput placeholder="Job" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="addresse" matInput placeholder="Addresse" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="description" matInput placeholder="Description" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="birthDate" matInput [matDatepicker]="picker" placeholder="Birth Date" />
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="controles-container">
+
+        <mat-form-field>
+          <input formControlName="nationality" matInput placeholder="Nationality" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="religion" matInput placeholder="Religion" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+ 
+        <mat-form-field>
+          <input formControlName="passportNumber" matInput placeholder="Passport No." />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="emergencyContact" matInput placeholder="Emergency Contact" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="martialStatus" matInput placeholder="Martial Status" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+          <div class="button-row">
+            <button mat-raised-button color="primary" type="submit" [disabled]="myform.invalid">Update</button>
+            <a mat-raised-button color="warn" (click)="onClose()">Close</a>
+          </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>
