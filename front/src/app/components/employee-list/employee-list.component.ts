@@ -41,10 +41,11 @@ export class EmployeeListComponent implements OnInit {
   }
   addEmployee() {
     try {
+      this.service.initilaizeForm();
       const config: MatDialogConfig = new MatDialogConfig();
       config.autoFocus = true;
-      config.width = '60%';
-      config.height = '40%';
+      config.width = '70%';
+      config.height = '80%';
       this.dialog.open(AddEmployeeFormComponent, config);
     } catch (err) {
       alert(err);

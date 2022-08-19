@@ -60,6 +60,30 @@ export class EmployeeService {
     UPI : new FormControl('',Validators.required),
     description : new FormControl('',Validators.required),
   })
+  initilaizeForm()
+  {
+    const data = {
+      id:'',
+      fullName:'',
+      email:'',
+      phone:'',
+      job:'',
+      birthDate:'',
+      addresse:'',
+      nationality:'',
+      religion:'',
+      martialStatus:'',
+      passportNumber:'',
+      emergencyContact:'',
+      bankName:'',
+      accountNumber:'',
+      IFSC:'',
+      PAN:'',
+      UPI:'',
+      description:'',
+    }
+    this.myform.setValue(data);
+  }
   fillEditForm(employee:any)
   {
     const data = {
