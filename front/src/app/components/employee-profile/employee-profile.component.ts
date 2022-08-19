@@ -7,6 +7,7 @@ import { EmployeeModel } from 'src/app/models/employee';
 import { MatDialog , MatDialogConfig} from '@angular/material/dialog';
 import { EmployeeService } from 'src/app/services/employee.service';
 import { EditPersonalInformationsComponent } from '../edit-personal-informations/edit-personal-informations.component';
+import { EditBankInformationsComponent } from '../edit-bank-informations/edit-bank-informations.component';
 
 @Component({
   selector: 'app-employee-profile',
@@ -52,7 +53,7 @@ export class EmployeeProfileComponent implements OnInit {
       )
   }
   // Dialog
-  onEdit(row:any)
+  onEditPersonal(row:any)
   {
     try{
       this.service.fillEditForm(row);
@@ -65,6 +66,19 @@ export class EmployeeProfileComponent implements OnInit {
       alert(err);
     }
 
+  }
+  onEditBank(row:any)
+  {
+    try{
+      this.service.fillEditForm(row);
+      const config : MatDialogConfig = new MatDialogConfig();
+      config.autoFocus = true;
+      config.width = "60%";
+      config.height = "30%";
+      this.dialog.open(EditBankInformationsComponent,config);
+    }catch(err){
+      alert(err);
+    }
   }
 
 }

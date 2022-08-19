@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from "@angular/common/http";
 import { EmployeeProfileComponent } from "./components/employee-profile/employee-profile.component";
 import { EditPersonalInformationsComponent } from "./components/edit-personal-informations/edit-personal-informations.component";
+import { EditBankInformationsComponent } from "./components/edit-bank-informations/edit-bank-informations.component";
 
 @NgModule({
   declarations: [
@@ -23,6 +24,6 @@ import { EditPersonalInformationsComponent } from "./components/edit-personal-in
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [EditPersonalInformationsComponent]
+  entryComponents: [EditPersonalInformationsComponent,EditBankInformationsComponent]
 })
 export class AppModule { }

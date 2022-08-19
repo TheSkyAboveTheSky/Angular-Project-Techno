@@ -1,0 +1,49 @@
+<mat-toolbar>
+  <h2>Edit Bank Informations</h2>
+  <button class="btn-dialog-close" mat-stroked-button (click)="onClose()" tabIndex="-1">
+    <mat-icon>clear</mat-icon>
+  </button>
+</mat-toolbar>
+<form [formGroup]="myform" class="normal-form" (submit)="onUpdate()">
+  <mat-grid-list cols="2" rowHeight="200px">
+    <mat-grid-tile>
+      <div class="controles-container">
+
+        <mat-form-field>
+          <input formControlName="bankName" matInput placeholder="Bank Name" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="accountNumber" matInput placeholder="Account Number" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="IFSC" matInput placeholder="IFSC Code" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="controles-container">
+
+        <mat-form-field>
+          <input formControlName="PAN" matInput placeholder="PAN No." />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+          <input formControlName="UPI" matInput placeholder="UPI Id" />
+          <mat-error>This field is Required </mat-error>
+        </mat-form-field>
+
+          <div class="button-row">
+            <button mat-raised-button color="primary" type="submit" [disabled]="myform.invalid">Update</button>
+            <a mat-raised-button color="warn" (click)="onClose()">Close</a>
+          </div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</form>
