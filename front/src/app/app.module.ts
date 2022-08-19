@@ -1,3 +1,4 @@
+import { EmployeeListComponent } from "./components/employee-list/employee-list.component";
 import { FormsModule , ReactiveFormsModule } from "@angular/forms";
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,7 +23,8 @@ import { SidebarComponent } from "./components/sidebar/sidebar.component";
     ReactiveFormsModule,
     HttpClientModule,
     EmployeeProfileComponent,
-    SidebarComponent
+    SidebarComponent,
+    EmployeeListComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
