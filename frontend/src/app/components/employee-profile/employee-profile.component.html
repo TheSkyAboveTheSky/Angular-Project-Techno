@@ -1,5 +1,6 @@
 <div class="body d-flex py-lg-3 py-md-2">
   <div class="container-xxl">
+      <!-- Employeee Profile Header-->
       <div class="row clearfix">
         <div class="col-md-12">
           <div class="card border-0 mb-4 no-bg">
@@ -9,6 +10,7 @@
           </div>
         </div>
       </div>
+      <!-- Employee Card -->
       <div class="row g-3">
         <div class="col-xl-8 col-lg-12 col-md-12">
             <div class="card teacher-card  mb-3">
@@ -19,11 +21,11 @@
                         </a>
                         <div class="about-info d-flex align-items-center mt-3 justify-content-center flex-column">
                             <h6 class="mb-0 fw-bold d-block fs-6">Web Developer</h6>
-                            <span class="text-muted small">Employee Id : 00001</span>
+                            <span class="text-muted small">Employee Id : {{employee._id}}</span>
                         </div>
                     </div>
                     <div class="teacher-info border-start ps-xl-4 ps-md-3 ps-sm-4 ps-4 w-100">
-                        <h6  class="mb-0 mt-2  fw-bold d-block fs-6">Luke Short</h6>
+                        <h6  class="mb-0 mt-2  fw-bold d-block fs-6">{{employee.fullName}}</h6>
                         <span class="py-1 fw-bold small-11 mb-0 mt-1 text-muted">Web Designer</span>
                         <p class="mt-2 small">The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy</p>
                         <div class="row g-2 pt-2">
@@ -36,7 +38,7 @@
                             <div class="col-xl-5">
                                 <div class="d-flex align-items-center">
                                     <i class="fa-solid fa-envelope"></i>
-                                    <span class="ms-2 small">LukeShortn@gmail.com</span>
+                                    <span class="ms-2 small">{{employee.email}}</span>
                                 </div>
                             </div>
                             <div class="col-xl-5">
@@ -48,7 +50,7 @@
                             <div class="col-xl-5">
                                 <div class="d-flex align-items-center">
                                     <i class="fa-solid fa-address-book"></i>
-                                    <span class="ms-2 small">2734  West Fork Street,EASTON 02334.</span>
+                                    <span class="ms-2 small">{{employee.adresse}}.</span>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +73,7 @@
                                 <span class="fw-bold">Nationality</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">Indian</span>
+                                <span class="text-muted">{{ employee.nationality}}</span>
                             </div>
                         </li>
                         <li class="row flex-wrap mb-3">
@@ -79,7 +81,7 @@
                                 <span class="fw-bold">Religion</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">Hindu</span>
+                                <span class="text-muted">{{ employee.religion}}</span>
                             </div>
                          </li>
                          <li class="row flex-wrap mb-3">
@@ -87,7 +89,7 @@
                                 <span class="fw-bold">Marital Status</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">Married</span>
+                                <span class="text-muted">{{employee.martialStatus}}</span>
                             </div>
                          </li>
                          <li class="row flex-wrap mb-3">

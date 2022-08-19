@@ -10,7 +10,7 @@ const employeeSchema = new mongoose.Schema({
   birthDate :{
     type : Date,
   },
-  adresse :{
+  addresse :{
     type : String,
   },
   nationality:{
@@ -41,6 +41,15 @@ const employeeSchema = new mongoose.Schema({
     type: String,
   },
   UPI:{
+    type: String,
+  },
+  phone :{
+    type : String,
+  },
+  job :{
+    type : String,
+  },
+  description :{
     type: String,
   }
 });

@@ -1,9 +1,12 @@
 export interface EmployeeModel {
+  _id: string;
   id : string;
   fullName: string;
   email:string;
+  phone:string;
+  job:string;
   birthDate:Date;
-  adresse:string;
+  addresse:string;
   nationality:string;
   religion:string;
   martialStatus:string;
@@ -14,4 +17,5 @@ export interface EmployeeModel {
   IFSC:string;
   PAN:string;
   UPI:string;
+  description:string;
 }
