@@ -18,6 +18,7 @@ export class EmployeeProfileComponent implements OnInit {
 
   ngOnInit(): void {
     this.getId();
+    this.getEmployee(this.id);
   }
 
   getId():void
@@ -27,5 +28,18 @@ export class EmployeeProfileComponent implements OnInit {
         this.id = params['id'];
       }
     )
+  }
+  getEmployee(id:string)
+  {
+    this.service.getEmployeeById(id)
+      .subscribe(
+        (employee)=>{
+          this.employee = employee;
+          console.log(this.employee);
+        },
+        (error) => {
+          console.log(error);
+        }
+      )
   }
 }
