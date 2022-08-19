@@ -26,13 +26,13 @@
                     </div>
                     <div class="teacher-info border-start ps-xl-4 ps-md-3 ps-sm-4 ps-4 w-100">
                         <h6  class="mb-0 mt-2  fw-bold d-block fs-6">{{employee.fullName}}</h6>
-                        <span class="py-1 fw-bold small-11 mb-0 mt-1 text-muted">Web Designer</span>
-                        <p class="mt-2 small">The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy</p>
+                        <span class="py-1 fw-bold small-11 mb-0 mt-1 text-muted">{{employee.job}}</span>
+                        <p class="mt-2 small">{{employee.description}}</p>
                         <div class="row g-2 pt-2">
                             <div class="col-xl-5">
                                 <div class="d-flex align-items-center">
                                     <i class="fa-solid fa-mobile-screen"></i>
-                                    <span class="ms-2 small">202-555-0174 </span>
+                                    <span class="ms-2 small">{{employee.phone}}</span>
                                 </div>
                             </div>
                             <div class="col-xl-5">
@@ -44,13 +44,13 @@
                             <div class="col-xl-5">
                                 <div class="d-flex align-items-center">
                                     <i class="fa-solid fa-cake-candles"></i>
-                                    <span class="ms-2 small">19/03/1980</span>
+                                    <span class="ms-2 small">{{employee.birthDate}}</span>
                                 </div>
                             </div>
                             <div class="col-xl-5">
                                 <div class="d-flex align-items-center">
                                     <i class="fa-solid fa-address-book"></i>
-                                    <span class="ms-2 small">{{employee.adresse}}.</span>
+                                    <span class="ms-2 small">{{employee.addresse}}.</span>
                                 </div>
                             </div>
                         </div>
@@ -97,7 +97,7 @@
                                 <span class="fw-bold">Passport No.</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">5468953210</span>
+                                <span class="text-muted">{{employee.passportNumber}}</span>
                             </div>
                          </li>
                          <li class="row flex-wrap">
@@ -105,7 +105,7 @@
                                 <span class="fw-bold">Emergency Contact</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">7468953210</span>
+                                <span class="text-muted">{{employee.emergencyContact}}</span>
                             </div>
                          </li>
                     </ul>
@@ -125,7 +125,7 @@
                                 <span class="fw-bold">Bank Name</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">Kotak</span>
+                                <span class="text-muted">{{employee.bankName}}</span>
                             </div>
                         </li>
                         <li class="row flex-wrap mb-3">
@@ -133,7 +133,7 @@
                                 <span class="fw-bold">Account No.</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">5436874596325486</span>
+                                <span class="text-muted">{{employee.accountNumber}}</span>
                             </div>
                          </li>
                          <li class="row flex-wrap mb-3">
@@ -141,7 +141,7 @@
                                 <span class="fw-bold">IFSC Code</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">Kotak000021</span>
+                                <span class="text-muted">{{employee.IFSC}}</span>
                             </div>
                          </li>
                          <li class="row flex-wrap mb-3">
@@ -149,7 +149,7 @@
                                 <span class="fw-bold">Pan No</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">ACQPF6584L</span>
+                                <span class="text-muted">{{employee.PAN}}</span>
                             </div>
                          </li>
                          <li class="row flex-wrap">
@@ -157,7 +157,7 @@
                                 <span class="fw-bold">UPI Id</span>
                             </div>
                             <div class="col-6">
-                                <span class="text-muted">454812kotak@upi</span>
+                                <span class="text-muted">{{employee.UPI}}</span>
                             </div>
                          </li>
                     </ul>
