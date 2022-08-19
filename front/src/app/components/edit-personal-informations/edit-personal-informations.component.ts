@@ -1,12 +1,13 @@
-import { MaterialModule } from "./../../material-module";
-import { CommonModule } from "@angular/common";
-import { EmployeeService } from "src/app/services/employee.service";
-import { Component,OnInit } from "@angular/core";
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialogRef } from "@angular/material/dialog";
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MaterialModule } from 'src/app/material-module';
+import { EmployeeService } from 'src/app/services/employee.service';
+
 @Component({
   selector: 'app-edit-personal-informations',
-  standalone:true,
-  imports:[CommonModule,MaterialModule],
+  standalone: true,
+  imports: [CommonModule,MaterialModule],
   templateUrl: './edit-personal-informations.component.html',
   styleUrls: ['./edit-personal-informations.component.css']
 })
@@ -16,7 +17,6 @@ export class EditPersonalInformationsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
   onUpdate()
   {
     if (this.service.myform.valid)
