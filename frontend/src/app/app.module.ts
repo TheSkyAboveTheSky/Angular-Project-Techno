@@ -9,12 +9,16 @@ import { MaterialModule } from './material-module';
 import { EmployeeProfileComponent } from './components/employee-profile/employee-profile.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { FormsModule } from '@angular/forms';
+import { EditPersonalInformationsComponent } from './components/edit-personal-informations/edit-personal-informations.component';
+import { EditBankInformationsComponent } from './components/edit-bank-informations/edit-bank-informations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeProfileComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    EditPersonalInformationsComponent,
+    EditBankInformationsComponent
   ],
   imports: [
     BrowserModule,
