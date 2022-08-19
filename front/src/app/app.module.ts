@@ -1,3 +1,4 @@
+import { AddEmployeeFormComponent } from "./components/add-employee-form/add-employee-form.component";
 import { EmployeeListComponent } from "./components/employee-list/employee-list.component";
 import { FormsModule , ReactiveFormsModule } from "@angular/forms";
 import { NgModule } from '@angular/core';
@@ -28,6 +29,6 @@ import { SidebarComponent } from "./components/sidebar/sidebar.component";
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [EditPersonalInformationsComponent,EditBankInformationsComponent]
+  entryComponents: [EditPersonalInformationsComponent,EditBankInformationsComponent,AddEmployeeFormComponent]
 })
 export class AppModule { }

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute , Router } from "@angular/router";
-import { FormsModule } from "@angular/forms";
 import { MaterialModule } from "./../../material-module";
 import { EmployeeModel } from 'src/app/models/employee';
 import { MatDialog , MatDialogConfig} from '@angular/material/dialog';
@@ -12,7 +11,7 @@ import { EditBankInformationsComponent } from '../edit-bank-informations/edit-ba
 @Component({
   selector: 'app-employee-profile',
   standalone: true,
-  imports: [CommonModule,MaterialModule,FormsModule],
+  imports: [CommonModule,MaterialModule],
   templateUrl: './employee-profile.component.html',
   styleUrls: ['./employee-profile.component.css']
 })
