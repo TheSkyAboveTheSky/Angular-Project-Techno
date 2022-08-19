@@ -8,10 +8,11 @@ import { HttpClientModule } from "@angular/common/http";
 import { EmployeeProfileComponent } from "./components/employee-profile/employee-profile.component";
 import { EditPersonalInformationsComponent } from "./components/edit-personal-informations/edit-personal-informations.component";
 import { EditBankInformationsComponent } from "./components/edit-bank-informations/edit-bank-informations.component";
+import { SidebarComponent } from "./components/sidebar/sidebar.component";
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -20,7 +21,8 @@ import { EditBankInformationsComponent } from "./components/edit-bank-informatio
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    EmployeeProfileComponent
+    EmployeeProfileComponent,
+    SidebarComponent
   ],
   providers: [],
   bootstrap: [AppComponent],
